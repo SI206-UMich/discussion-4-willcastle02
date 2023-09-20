@@ -17,8 +17,8 @@ class Rectangle():
     # It returns a string, 
     #       "A rectangle with width ____ and height ____"
 
-    def __str__(width, height):
-        return f"A rectangle with width {self.width} and height {self.height}"
+    def __str__(self):
+        return (f"A rectangle with width {self.width} and height {self.height}")
     
 
 
@@ -30,7 +30,7 @@ class Rectangle():
     #       False otherwise
 
     def verify_input(self):
-        if (width > 0) and (height > 0):
+        if (self.width > 0) and (self.height > 0):
             return True
         else:
             return False
@@ -43,8 +43,8 @@ class Rectangle():
     # Otherwise, it returns the area of the rectangle.
 
     def area(self):
-        if verify_input(self) == True:
-            return width * height
+        if self.verify_input() == True:
+            return self.width * self.height
         else:
             return "Invalid input"
 
@@ -56,8 +56,8 @@ class Rectangle():
     # Otherwise, it returns the perimeter of the rectangle.
 
     def perimeter(self):
-        if verify_input(self) == True:
-            return (width * 2) + (height * 2)
+        if self.verify_input() == True:
+            return (self.width * 2) + (self.height * 2)
         else:
             return "Invalid input"
     
