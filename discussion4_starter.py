@@ -1,3 +1,4 @@
+#Will Castle
 class Rectangle():
     # Create the constructor "__init__" method
     # Arguments: width (an ingeter), height (an integer)
